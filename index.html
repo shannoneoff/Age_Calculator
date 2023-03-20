@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
+    <link rel="stylesheet" href="./css/calculator.css">
+
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <h1 class="heading">Age Calculator</h1>
+    
+    <form id="main">
+      <div class="container">
+        <label for="datepicker">Birth Date: </label>
+        <input type="text" id="datepicker" class="input" value="" placeholder="Choose birthdate">
+        <button type="reset" value="Reset" onclick="resetForm()">Reset</button><br>
+      </div>
+    </form>
+    
+    <br>
+
+    <div id="ageresult">
+      <!-- Displays calculated age -->
+      <h2 id="result"></h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+
+    <script src="./js/calculator.js"></script>
+    <script src="./js/calendar.js"></script>
+    <script src="./js/blankmessage.js"></script>
+    <script src="./js/reset.js"></script>
+
+  </body>
+</html>

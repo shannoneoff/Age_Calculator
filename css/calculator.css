@@ -1,0 +1,56 @@
+title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.heading {
+  font-weight: bolder;
+  margin: 10px;
+  text-align: center;
+}
+
+form#main {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+div.container {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input#datepicker {
+  margin-inline: 15px;
+  padding: 10px;
+  border: 5px;
+  border-color: black;
+  border-radius: 8px;
+  box-shadow: 5px 10px 10px 5px rgb(77, 127, 27);
+  pointer-events: auto;
+}
+
+button {
+  border-radius: 8px;
+  background-color: rgb(178, 237, 119);
+  pointer-events: auto;
+}
+
+div#ageresult {
+  margin: auto;
+  text-align: center;
+}
+
+h2#result {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+}
