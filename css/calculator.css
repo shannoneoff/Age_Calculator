@@ -1,56 +1,95 @@
-title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+/* AGE CALCULATOR APP */
 
+/* BASE */
 body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
   font-family: 'Times New Roman', Times, serif;
+  color: #333;
 }
 
-.heading {
-  font-weight: bolder;
-  margin: 10px;
-  text-align: center;
-}
-
-form#main {
-  padding: 20px;
-  width: 80%;
-  margin: auto;
-}
-
-div.container {
-  text-align: center;
-}
-
-label {
+/* LAYOUT */
+.l-heading {
+  background-color: rgb(68, 110, 110);
   font-weight: bold;
-  text-transform: uppercase;
+  font-size: 200%;
+  margin: 0;
+  padding: 10px;
+  color: rgba(255, 255, 0, 0.742);
+  text-align: center;
 }
 
-input#datepicker {
+.l-form {
+  background-color: rgba(71, 173, 224, 0.285);
+  padding: 30px;
+}
+
+.l-ageresult {
+  background-color: rgba(71, 173, 224, 0.85);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+/* INNER LAYOUT */
+.il-container {
+  width: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.il-footer {
+  max-width: 60%;
+  margin: auto;
+  padding: 1.5em 0;
+  overflow: hidden;
+}
+
+/* FORM ELEMENTS */
+.f-label {
+  margin: 5px 0;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(47, 76, 18);
+  font-size: large;
+  padding-top: 10px;
+  text-transform: uppercase;
+  vertical-align: -.10em;
+}
+
+.f-input {
   margin-inline: 15px;
   padding: 10px;
   border: 5px;
   border-color: black;
   border-radius: 8px;
-  box-shadow: 5px 10px 10px 5px rgb(77, 127, 27);
+  box-shadow: 5px 10px 10px 5px rgba(77, 127, 27, 0.502);
   pointer-events: auto;
 }
 
-button {
+.pika-single {
+  color: rgba(71, 173, 224, 0.75);
+}
+
+.f-button {
+  margin: 0 10px;
+  padding: 5px;
   border-radius: 8px;
-  background-color: rgb(178, 237, 119);
+  background-color: rgba(134, 218, 49, 0.502);
+  vertical-align: -.10em;
   pointer-events: auto;
 }
 
-div#ageresult {
-  margin: auto;
-  text-align: center;
+/* FOOTER */
+a:link {
+  color: rgba(51, 153, 204, 1);
 }
 
-h2#result {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: oblique;
-  font-weight: bolder;
-  font-size: xx-large;
+a:visited {
+  color: rgba(20, 158, 186, 0.75);
+}
+
+a:hover {
+  color: rgba(20, 152, 229, 0.89);
 }

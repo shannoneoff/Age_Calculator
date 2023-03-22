@@ -4,36 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- PIKADAY CALENDAR STYLING -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-
+    <!-- STYLING -->
     <link rel="stylesheet" href="./css/calculator.css">
 
     <title>Age Calculator</title>
   </head>
   <body>
-    <h1 class="heading">Age Calculator</h1>
-    
-    <form id="main">
-      <div class="container">
-        <label for="datepicker">Birth Date: </label>
-        <input type="text" id="datepicker" class="input" value="" placeholder="Choose birthdate">
-        <button type="reset" value="Reset" onclick="resetForm()">Reset</button><br>
-      </div>
-    </form>
-    
-    <br>
-
-    <div id="ageresult">
-      <!-- Displays calculated age -->
-      <h2 id="result"></h2>
+    <div class="l-heading">
+      <h1>Age Calculator</h1>
     </div>
 
+    <div class="l-form">
+      <form>
+        <div class="il-container">
+          <!-- Form label -->
+          <label for="datepicker" class="f-label">Birth Date:</label>
+          <!-- When clicked, displays Pikaday calendar for user date selection -->
+          <input type="text" id="datepicker" class="f-input" value="" placeholder="Choose birthdate">
+          <!-- Resets calendar by default, and result by resetForm() function -->
+          <button class="f-button" type="reset" value="Reset" onclick="resetForm()">Reset</button><br>
+        </div>
+      </form>
+    </div>
+
+    <div class="l-heading l-ageresult">
+      <!-- Displays calculated age -->
+      <h2>age: <mark id="result"></mark></h2>
+    </div>
+
+    <div class="l-footer">
+      <div class="il-container il-footer">
+        <p style="text-align: center">
+          <small>Copyright &copy; 2023-
+            <script>document.write(new Date().getFullYear())</script>
+            <a href="https://shannoneoff.github.io">Shannon Eoff</a> || All Rights Reserved</small>
+        </p>
+      </div>
+    </div>
+
+    <!-- PIKADAY LIBRARY -->
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
 
+    <!-- MOMENT.JS LIBRARY -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <!-- Calculates age result -->
+    <!-- **Currently only denotes year, working on modifying to also calculate months** -->
     <script src="./js/calculator.js"></script>
+
+    <!-- Pikaday calendar variable with onSelect function to call ageCalculator() -->
     <script src="./js/calendar.js"></script>
+    
+    <!-- Display message if no date selected (may be unnecessary) -->
     <script src="./js/blankmessage.js"></script>
+    
+    <!-- Contains resetForm() function to clear result -->
     <script src="./js/reset.js"></script>
 
   </body>
