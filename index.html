@@ -38,7 +38,7 @@
       <div class="il-container il-footer">
         <p style="text-align: center">
           <small>Copyright &copy; 2023-
-            <script>document.write(new Date().getFullYear())</script>
+            <script>document.write(new Date().getFullYear())</script> <!-- Automatically updates ending date of copyright year -->
             <a href="https://shannoneoff.github.io">Shannon Eoff</a> || All Rights Reserved</small>
         </p>
       </div>
@@ -50,16 +50,10 @@
     <!-- MOMENT.JS LIBRARY -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 
-    <!-- Calculates age result -->
+    <!-- Calculates age result, uses Pikaday calendar -->
     <!-- **Currently only denotes year, working on modifying to also calculate months** -->
     <script src="./js/calculator.js"></script>
 
-    <!-- Pikaday calendar variable with onSelect function to call ageCalculator() -->
-    <script src="./js/calendar.js"></script>
-    
-    <!-- Display message if no date selected (may be unnecessary) -->
-    <script src="./js/blankmessage.js"></script>
-    
     <!-- Contains resetForm() function to clear result -->
     <script src="./js/reset.js"></script>
 
