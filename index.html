@@ -12,8 +12,15 @@
     <title>Age Calculator</title>
   </head>
   <body>
-    <div class="l-heading">
-      <h1>Age Calculator</h1>
+    <div>
+      <div>
+        <h1 class="l-heading">Age Calculator</h1>
+      </div>
+      <div>
+        <p class="l-subheading">
+          (Finds age in years and months)
+        </p>
+      </div>
     </div>
 
     <div class="l-form">
@@ -29,15 +36,15 @@
       </form>
     </div>
 
-    <div class="l-heading l-ageresult">
+    <div>
       <!-- Displays calculated age -->
-      <h2>age: <mark id="result"></mark></h2>
+      <h2 class="l-result">age: <mark id="years"></mark><mark id="months"></mark></h2>
     </div>
 
-    <div class="l-footer">
+    <div>
       <div class="il-container il-footer">
         <p style="text-align: center">
-          <small>Copyright &copy; 2023-
+          <small>Copyright &copy; 2023 -
             <script>document.write(new Date().getFullYear())</script> <!-- Automatically updates ending date of copyright year -->
             <a href="https://shannoneoff.github.io">Shannon Eoff</a> || All Rights Reserved</small>
         </p>
@@ -47,11 +54,7 @@
     <!-- PIKADAY LIBRARY -->
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
 
-    <!-- MOMENT.JS LIBRARY -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-
     <!-- Calculates age result, uses Pikaday calendar -->
-    <!-- **Currently only denotes year, working on modifying to also calculate months** -->
     <script src="./js/calculator.js"></script>
 
     <!-- Contains resetForm() function to clear result -->
